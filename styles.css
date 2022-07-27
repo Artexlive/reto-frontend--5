@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    --Darkcyan: hsl(185, 80%, 56%);
+    --Verydarkdesaturatedblue: rgb(12,25,44);
+    --Darkgrayishblue: hsl(209, 37%, 71%);
+    --Darkgray: hsl(0, 0%, 59%);
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	text-decoration:none;
+	color:inherit;
+	background-color:transparent;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    color: white;
+    background-color: rgb(13,25,44);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 20px;
+}
+
+.card {
+    width: 350px;
+    background-color: rgb(21,38,63);
+    padding: 25px 20px;
+    border-radius: 20px;
+    gap: 20px;
+
+}
+
+.card_one_section_img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    
+}
+
+.card_one_section {
+    position: relative;
+    --Darkcyan: hsla(185, 80%, 56%, 0.418);
+}
+
+.card_one_section_view {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+} 
+
+.card_one_section_fondo {
+    opacity: 0;
+    border-radius: 10px;
+    position: absolute;
+    height: 100%;
+    background-color: var(--Darkcyan);
+    width: 100%;
+    cursor: pointer;
+}
+
+.card_one_section_fondo:hover {
+    opacity: 1;
+}
+.card_two_section {
+    margin: 20px 0 ;
+}
+
+.card_two_section_title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.card_two_section_title:hover {
+    color: var(--Darkcyan);
+}
+
+.card_two_section_paragraph {
+    font-size: 17px;
+    line-height: 1.6;
+    color: var(--Darkgrayishblue);
+    margin-bottom: 15px;
+}
+
+.card_two_section_info {
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.eth, .clock {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.eth p{
+    color: var(--Darkcyan);
+    font-weight: 700;
+}
+
+.clock p {
+    color: var(--Darkgrayishblue);
+}
+
+.card_tree_section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-top: 0.1px solid rgba(255, 255, 255, 0.267); 
+    padding-top: 20px;
+}
+
+.card_tree_section img {
+    width: 45px;
+    border: 2px solid white;
+    border-radius: 50px;
+}
+
+.card_tree_section_creator {
+    color: var(--Darkgrayishblue);
+}
+
+span {
+    color: white;
+    cursor: pointer;
+}
+
+span:hover {
+    color: var(--Darkcyan);
+}
